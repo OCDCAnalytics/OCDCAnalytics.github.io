@@ -1,66 +1,90 @@
-body, html {
-  height: 100%;
-}
-
-.bg {
-  /* The image used */
-  background-image: url("image-logo.png");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
+  width: 50%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
+  border: 1px solid rgb(102, 173, 255); /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
-}
-#myTable{
-  position: relative;
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 100%;
-  border-bottom: 1px solid #7A7A7A;
 }
 
 #myTable {
   border-collapse: collapse; /* Collapse borders */
-  width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
-  font-size: 18px; /* Increase font-size */
+  width: 50%; /* Full-width */
+  border: 1px solid rgb(129, 205, 255); /* Add a grey border */
+  font-size: 15px; /* Increase font-size */
 }
 
 #myTable th, #myTable td {
-  padding: 15px; /* Add padding */
-	height: 75%;
-	width: 75%;
-  }
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
 
 #myTable tr {
   /* Add a bottom border to all table rows */
-  border-bottom: 1px solid #ddd;
-  height: 100%;
-	width: 100%;
- }
+  border-bottom: 1px solid rgb(102, 173, 255);;
+}
 
 #myTable tr.header, #myTable tr:hover {
   /* Add a grey background color to the table header and on hover */
-  background-color: #f1f1f1;
+  background-color: rgb(102, 173, 255);;
+}
+
+#myInput1 {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid rgb(102, 173, 255); /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable1 {
+  border-collapse: collapse; /* Collapse borders */
+  width: 50%; /* Full-width */
+  border: 1px solid rgb(129, 205, 255); /* Add a grey border */
+  font-size: 15px; /* Increase font-size */
+}
+
+#myTable1 th, #myTable1 td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable1 tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid rgb(102, 173, 255);;
+}
+
+#myTable1 tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: rgb(102, 173, 255);;
 }
 
 .center {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
+  padding: 5px 5px 5px 5px;
   text-align: center;
+  background: #ffc400;
+  color: white;
+  font-size: 24px;
+  font-family: Arial;
+  box-shadow: 10px 10px 5px grey;
 }
+
+
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 25px 20px 12px 200px;
+}
+
+
