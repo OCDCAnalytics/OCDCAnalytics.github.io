@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create an image slider with HTML, CSS and JavaScript" />
+  <meta name="keywords" content="image slider, carousel, codepen, css, js" />
+  <title>Image Slider</title>
 </head>
 <body>
   <style>
@@ -63,7 +68,45 @@
   </style>
   <div class="center">
     <h3>OCDC Analystics Migrant Dashboard Page</h3>
+ <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
   </div>
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+
+
+
+
+      </div>
+    </body>
+
+
+
+
+
 <script src="Java.js"></script>
 </body>
-</html>
+</html> 
