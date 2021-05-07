@@ -84,6 +84,7 @@
   
   body {
     height: 100%;
+    opacity: 0.5;
   /*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
   }
   
