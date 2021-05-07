@@ -15,7 +15,7 @@
     
   }
   .center {
-    padding: 5px 5px 5px 5px;
+    padding: 10px 50px 20px;
     text-align: center;
     background: #ffc400;
     color: white;
@@ -123,22 +123,7 @@
     cursor: pointer;
   }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
+ 
   
   .text {
     color: black;
