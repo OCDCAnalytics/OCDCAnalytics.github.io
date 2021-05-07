@@ -136,7 +136,7 @@
     background-color: #008CBA;
   }
   
-  .column img:hover .overlay {
+  .container:hover .overlay {
     opacity: 1;
   }
   
