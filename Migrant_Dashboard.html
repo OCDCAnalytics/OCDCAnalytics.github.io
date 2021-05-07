@@ -59,28 +59,34 @@
     <h3>OCDC Analystics Migrant Dashboard Page</h3>
   </div>
 
-
- <!-- The grid: four columns -->
+<!-- The grid: four columns -->
 <div class="row">
   <div class="column">
-    <img src="Immunzation_graph_final.png" width="200" height="200"onclick="myFunction(this);">
+    <img src="Immunzation_graph_final.png" alt="Nature" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="Enrollment.png" alt="Snow" width="200" height="200"  onclick="myFunction(this);">
-
+    <img src="RXII_Standard_Graph.png" alt="Snow" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="MSHS_Infant_Toddler_Standard_Graph.png" width="200" height="200" onclick="myFunction(this);">
-  
+    <img src="EHS_CP1_2.png" alt="Mountains" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="EHS_CP1_2.png" width="200" height="200"  onclick="myFunction(this);">
-    
+    <img src="MSHS_Infant_Toddler_Standard_Graph.png" alt="Lights" onclick="myFunction(this);">
   </div>
-  <div class="column">
-    <img src="RXII_Standard_Graph.png" width="200" height="200"  onclick="myFunction(this);">
-    
 </div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:80%" class="center">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+ 
 
 <!-- The expanding image container -->
 <div class="container">
