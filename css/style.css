@@ -123,12 +123,6 @@
     cursor: pointer;
   }
 
-
-  .column img:hover {
-    width: 100%;
-    opacity: 1;
-  }
-
   .overlay {
     position: absolute;
     top: 0;
