@@ -4,7 +4,6 @@
     float: left;
     width: 25%;
     padding: 10px;
-    border: 5px solid #ffc400;
   }
   
   /* Style the images inside the grid */
@@ -66,5 +65,4 @@
     width: 50%;
     background: #ffc400;
     border-radius: 8px;
-    box-shadow: 10px 10px 5px grey;
   }
