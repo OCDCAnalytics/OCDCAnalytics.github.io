@@ -1,6 +1,5 @@
 
-  
- /* The grid: Four equal columns that floats next to each other */
+  /* The grid: Four equal columns that floats next to each other */
 .column {
     float: left;
     width: 25%;
@@ -47,12 +46,4 @@
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
-  .center {
-    padding: 5px 5px 5px 5px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-family: Arial;
-    box-shadow: 10px 10px 5px black;
   }
