@@ -10,7 +10,8 @@
   .column img {
     opacity: 0.8;
     cursor: pointer;
-    border: 5px solid #555;
+    border: 5px solid black;
+    border-radius: 8px;
   }
   
   .column img:hover {
@@ -49,11 +50,20 @@
     cursor: pointer;
   }
   .center {
-    padding: 5px 5px 5px 5px;
     text-align: center;
     background: #ffc400;
     color: white;
     font-size: 24px;
     font-family: Arial;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+  .center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: #ffc400;
+    border-radius: 8px;
     box-shadow: 10px 10px 5px grey;
   }
