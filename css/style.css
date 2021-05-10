@@ -65,4 +65,5 @@
     width: 50%;
     background: #ffc400;
     border-radius: 8px;
+    box-shadow: 3px 3px #ffc400, -1em 0 .4em rgb(133, 229, 253);
   }
