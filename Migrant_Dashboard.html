@@ -54,7 +54,27 @@
     </ul>
   </div>
 </nav> 
+<style>
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
+/* When you mouse over the container, fade in the overlay title */
+.column:hover .overlay {
+  opacity: 1;
+}
+</style>
   <div class="center">
     <h3>MSHS Report: "Insert County Name".</h3>
   </div>
@@ -63,6 +83,8 @@
 <div class="row">
   <div class="column">
     <img src="Immunzation_graph_final.png" width = 200 height="200" title="Immunization"  onclick="myFunction(this);">
+    <div class="overlay">Immunization</div>
+    </div>
     </div>
   <div class="column">
     <img src="RXII_Standard_Graph.png" width = 200 height="200" onclick="myFunction(this);">
