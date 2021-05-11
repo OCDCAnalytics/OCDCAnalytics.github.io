@@ -77,3 +77,11 @@
     border-radius: 8px;
     box-shadow: 3px 3px #ffc400, -1em 0 .4em rgb(133, 229, 253);
   }
+  .center4 {
+    text-align: center;
+    background: #ffc400;
+    color: white;
+    font-size: 24px;
+    font-family: Arial;
+    box-shadow: 3px 3px #ffc400, -1em 0 .4em rgb(133, 229, 253);
+  }
