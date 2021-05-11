@@ -20,6 +20,13 @@
   
 .column img:hover {
     opacity: 1;
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
   }
   
   /* Clear floats after the columns */
