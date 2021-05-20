@@ -23,7 +23,7 @@
     position:relative;
     top:-25px;
     left:-35px;
-    width:300px;
+    width:275px;
     height:auto;
     display:block;
     z-index:999;
@@ -78,4 +78,8 @@
     border-radius: 8px;
     box-shadow: 3px 3px #ffc400, -1em 0 .4em rgb(133, 229, 253);
   }
-
+  footer {
+    padding: 10px 20px;
+    background: #666;
+    color: white;
+  }
