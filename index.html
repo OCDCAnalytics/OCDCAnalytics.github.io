@@ -4,24 +4,26 @@
 <meta charset="utf-8">
 
 <head>
-  <link rel="stylesheet" href="css/style_css.css">
+
+  <link rel="stylesheet" href="css/style.css">
   <title>OCDC Analytics</title>
-  <link rel="icon" href="image-logo.png" type="image/gif"></title>
+  <link rel="icon" href="image-logo2.png" type="image/gif"></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create an image slider with HTML, CSS and JavaScript" />
+  <meta name="keywords" content="image slider, carousel, codepen, css, js" />
+  <title>Image Slider</title>
 </head>
 <body>
-  <style>
-    body {background-image: url('image-logo.png');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 10% 40%;
-          background-position: center;
-         }
-  </style>
+
+    
+
+
 <nav class="navbar navbar-inverse">
   <a class="navbar-brand" href="#">
   <img src="main_logo.png" width="300" height="35" alt="">
@@ -42,7 +44,7 @@
         <ul class="dropdown-menu">
           <li><a href="file:///C:/Users/talln/Desktop/OCDCAnalytics.github.io/table.html">R-10 Dashboards</a></li>
           <li><a href="file:///C:/Users/talln/Desktop/OCDCAnalytics.github.io/dashboards.html">R-12 Dashboards</a></li>
-          <li><a href="Migrant_Dashboard.html"> Migrant and Seasonal</a></li>
+          <li><a href="file:///C:/Users/talln/Desktop/OCDCAnalytics.github.io/Migrant_Dashboard.html">Migrant and Seasonal</a></li>
         </ul>
       </li>
 
@@ -53,64 +55,94 @@
     </ul>
   </div>
 </nav> 
-<div class="center">
-  <h3>OCDC Analystics Navigation Page</h3>
-</div>
+<button onclick="window.print()">Print this page</button>
+<style>
+.overlay {
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 83%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.column:hover .overlay {
+  opacity: 1;
+}
+</style>
+  <div class="center">
+    <h3>MSHS PIR Report Dashboard</h3>
+  </div>
+
+ 
+  
+  
+<!-- The grid: four columns -->
 <div class="row">
   <div class="column">
-    <h3>|Data Table Search|</h3>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tables..">
+    <img src="Immunzation_graph_final.png" width = 250 height="200" title="Immunization"  onclick="myFunction(this);">
+    <div class="overlay">Immunization</div>
+    </div>
+  <div class="column">
+    <img src="RXII_Standard_Graph.png" width = 250 height="200" title="IFSP" onclick="myFunction(this);">
+  <div class="overlay">IFSP</div>
+    </div>
+  <div class="column">
+    <img src="EHS_CP1_2.png" width = 250 height="200" title="Enrollment" onclick="myFunction(this);">
+    <div class="overlay">Enrollment</div>
+    </div>
+  <div class="column">
+    <img src="MSHS_Infant_Toddler_Standard_Graph.png" width = 250 height="200" title="Disability Count" onclick="myFunction(this);">
+    <div class="overlay">Disability Count</div>
+  </div>
+</div>
+<div class="center">
+  <h3>Dashboard Display</h3>
+</div>
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-<table id="myTable">
-  <tr class="header">
-    <th style="width:60%;">Name</th>
-    <th style="width:40%;">Table Link</th>
-  </tr>
-  <tr>
-    <td>Enrollment</td>
-    <td>Link</td>
-  </tr>
-  <tr>
-    <td>Assement</td>
-    <td>Link</td>
-  </tr>
-  <tr>
-    <td>Human Resources</td>
-    <td>Link</td>
-  </tr>
-  <tr>
-    <td>Budget</td>
-    <td>link</td>
-  </tr>
-</table>
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:80%" class="center2">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
 </div>
-<div class="column">
-  <h3>|Dashboard Search|</h3>
-  <input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search for Dashboard..">
  
-<table id="myTable1">
-  <tr class="header">
-    <th style="width:60%;">Name</th>
-    <th style="width:40%;">Dashboard Link</th>
-  </tr>
-  <tr>
-    <td>Hood River</td>
-    <td>Link</td>
-  </tr>
-  <tr>
-    <td>Multnomah</td>
-    <td>Link</td>
-  </tr>
-  <tr>
-    <td>Malheur</td>
-    <td>Link</td>
-  </tr>
-  <tr>
-    <td>OCDC</td>
-    <td>Link</td>
-  </tr>
-</table>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:80%" class="center2">
+ 
+ 
+  <!-- Image text -->
+  <div id="imgtext"></div>
 </div>
+
+
+
+
+
 <script src="Java.js"></script>
+<div class = "footer">
+<p>Oregon Childhood Development Coalition ©. All rights reserved. 
+  <br>
+  Please contact the Performance Analyst for any questions: David.Brewer@ocdc.net
+</br>
+</p>
+</div>
 </body>
-</html>
+</html> 
